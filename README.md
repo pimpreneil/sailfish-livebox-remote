@@ -1,23 +1,19 @@
-Sailfish Livebox Remote
-=======================
+# Sailfish Livebox Remote
 
-About
------
+## About
 
 Sailfish Livebox Remote is a simple network remote application to control the Orange Livebox using a Jolla Smartphone (or any SailfishOS phone).
 
-Roadmap
--------
+## Roadmap
 
 1. Add a setting screen to configure the IP of the TV box
 2. Add the possibility to personalize the channel zapping screen (add/remove/move channels)
 
-The Livebox API
----------------
+## The Livebox API
 
 I did not manage to find any official documentation for the API. Here are the basic calls I have found on the internet and tested:
 
-Zap to a specific channel:
+### Zap to a specific channel
 
     http://192.168.1.10:8080/remoteControl/cmd?operation=09&epg_id=**********&uui=1
 
@@ -25,7 +21,7 @@ The epg_id of each channel can be found by going to the following URL. It has to
 
     http://lsm-rendezvous040413.orange.fr/API/?api_token=be906750a3cd20d6ddb47ec0b50e7a68&output=json&withChannels=1
     
-Simulate a button press:
+### Simulate a button press
 
     http://192.168.1.10:8080/remoteControl/cmd?operation=01&key=116&mode=0
     
@@ -62,3 +58,11 @@ The possible modes:
     0: Simple button press
     1: Long button press (press action)
     2: Long button press (release action)
+
+### Get box infos
+
+    http://192.168.1.10:8080/remoteControl/cmd?operation=10
+    
+### Listen to events
+
+    http://192.168.1.10:8080/remoteControl/notifyEvent
