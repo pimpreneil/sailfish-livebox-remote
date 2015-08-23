@@ -17,9 +17,82 @@ I did not manage to find any official documentation for the API. Here are the ba
 
     http://192.168.1.10:8080/remoteControl/cmd?operation=09&epg_id=**********&uui=1
 
-The epg_id of each channel can be found by going to the following URL. It has to be padded with "\*" to reach a 10 characters string (e.g. TMC would be *******195):
+Here are the epg_id of most of the channels. For the rest, the event listener can give them to you. The ids have to be padded with "\*" to reach a 10 characters string (e.g. TF1 becomes *******192):
 
-    http://lsm-rendezvous040413.orange.fr/API/?api_token=be906750a3cd20d6ddb47ec0b50e7a68&output=json&withChannels=1
+    TF1 : 192
+    France 2 : 4
+    France 3 : 80
+    Canal+ : 34
+    France 5 : 47
+    M6 : 118
+    Arte : 111
+    D8 : 445
+    W9 : 119
+    TMC : 195
+    NT1 : 446
+    NRJ 12 : 444
+    LCP/PS : 234
+    France 4 : 78
+    BFM TV : 481
+    i>Télé : 226
+    D17 : 458
+    Gulli : 482
+    France Ô : 160
+    HD1 : 1404
+    L'Equipe 21 : 1401
+    6ter : 1403
+    Numéro 23 : 1402
+    RMC Découverte : 1400
+    Chérie 25 : 1399
+    Téva : 191
+    TV5 Monde : 205
+    Paris Première : 145
+    RTL9 : 115
+    AB1 : 5
+    Tv Breizh : 225
+    Canal+ Cinéma : 33
+    Canal+ Sport : 35
+    Canal+ Family : 657
+    Canal+ Décalé : 30
+    OCS max : 730
+    OCS City "génération HBO" : 128 
+    OCS choc : 732
+    OCS géants : 734
+    TCM : 185
+    Disney Channel : 58
+    Boomerang : 321
+    Boing : 924
+    Equidia Live : 64
+    Equidia Life : 1146
+    AB Moteurs : 15
+    beIN SPORT 1 : 1290
+    beIN SPORT 2 : 1304
+    Eurosport : 76
+    Eurosport 2 : 439
+    sport365 : 1355
+    Nautical Channel : 415
+    LCI : 112
+    France 24 : 529
+    Ushuaia TV : 451
+    Histoire : 88
+    Animaux : 12
+    Escales : 67
+    Chasse et pêche : 38
+    Toute l'histoire : 7
+    Encyclo : 63
+    NoLife : 1000000
+    Game One : 87
+    Mangas : 6
+    KZTV : 929
+    TRACE Urban : 325
+    NRJ Hits : 605
+    M6 Music Hits : 453
+    MCM Top : 343
+    MCM Pop : 241
+    Trace Tropical : 753
+    CNN : 53
+    BBC World : 19
+    Al Jazeera English : 180
     
 ### Simulate a button press
 
