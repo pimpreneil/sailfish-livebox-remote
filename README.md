@@ -17,7 +17,7 @@ I did not manage to find any official documentation for the API. Here are the ba
 
     http://192.168.1.10:8080/remoteControl/cmd?operation=09&epg_id=**********&uui=1
 
-Here are the epg_id of most of the channels. For the rest, the event listener can give them to you. The ids have to be padded with "\*" to reach a 10 characters string (e.g. TF1 becomes *******192):
+Here are the epg_id of most of the channels. For the rest, the box infos call below can give you the currently playing channel's epg_id. The ids have to be padded with "\*" to reach a 10 characters string (e.g. TF1 becomes *******192):
 
     TF1 : 192
     France 2 : 4
